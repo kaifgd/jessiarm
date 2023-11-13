@@ -1,4 +1,4 @@
-# Install jessiarm code
+# 4장 Install jessiarm code
 # jessiarm install on Jetson
 cd ~/catkin_ws/src
 git clone https://github.com/zeta0707/jessiarm.git
@@ -8,7 +8,7 @@ cd ~/Downloads/opencvDownTo34
 sudo patch -p1 /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake -p1 < cv_brige.patch
 cd ~/catkin_ws
 cma
-# Teleop by keyboard
+# 7장 Teleop by keyboard
 # teleop_twist_keyboard 설치
 jetson@jp4612GCv346Py37:~/catkin_ws$ git clone https://github.com/ros-teleop/teleop_twist_keyboard.git
 jetson@jp4612GCv346Py37:~/catkin_ws$ cma
@@ -31,13 +31,13 @@ jetson@jp4612GCv346Py37:~/catkin_ws$ cp ~/.ros/automove.txt ~/catkin_ws
 # automove 실행
 cd catkin_ws
 python src/jessiarm/jessiarm_control/src/auto_move.py
-# Verify USB camera
+# 9장 Verify USB camera
 # Jetson에서 카메라 동작 확인
 jetson@jp4612GCv346Py37:~$ ls /dev/video*
 /dev/video0가 출력된다
 jetson@jp4612GCv346Py37:~$ nvgstcapture-1.0 --camsrc=0 --cap-dev-node=/dev/video0
-# blob PicknPlace
+# 10장 blob PicknPlace
 # launch로 실행
 roslaunch jessiarm_control blob_control.launch
-# Yolo4 PicknPlace
+# 11장 Yolo4 PicknPlace
 파일에 들어가서 catkin_ws>src>yolov4-for-darknet_ros>darknet_ros>darknet_ros>conflg>ros.yaml을 클릭하여 첫번째 camera_reading의 토픽을 webcam_image로 변경한다.
