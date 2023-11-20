@@ -23,10 +23,7 @@ u m : motor3 기울어짐
 t b: gripper 닫힘, 열림 
 U, M: motor4 회전, 기능 삭제
 # 3장 Automatic Move
-# rosrun으로 ~/catkin_ws에서 joystick, keyboard로 운전한 경우
-jetson@jp4612GCv346Py37:~/catkin_ws$ cp automove.txt ~/catkin_ws
-jetson@jp4612GCv346Py37:~/catkin_ws$ cp automove.txt ~/catkin_wssrc/jessiarm/jessiarm_control/src/
-# roslaunch로 운전한 경우
+# roslaunch로 운전하였기 때문에 다음과 같이 실행합니다.
 jetson@jp4612GCv346Py37:~/catkin_ws$ cp ~/.ros/automove.txt ~/catkin_ws/src/jessiarm/jessiarm_control/src
 jetson@jp4612GCv346Py37:~/catkin_ws$ cp ~/.ros/automove.txt ~/catkin_ws
 # automove 실행
