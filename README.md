@@ -11,8 +11,8 @@ cd ~/catkin_ws
 cma
 # 2장 Teleop by keyboard
 # teleop_twist_keyboard 설치
-  jetson@jp4612GCv346Py37:~/catkin_ws$ git clone https://github.com/ros-teleop/teleop_twist_keyboard.git
-  jetson@jp4612GCv346Py37:~/catkin_ws$ cma
+jetson@jp4612GCv346Py37:~/catkin_ws$ git clone https://github.com/ros-teleop/teleop_twist_keyboard.git
+jetson@jp4612GCv346Py37:~/catkin_ws$ cma
 # launch 파일로 실행
 roslaunch jessiarm_control teleop_keyboard.launch
 # 위의 teleop_twist_keyboard 기본 기능에서 Jessiarm은 아래의 기능으로 변경했습니다.
