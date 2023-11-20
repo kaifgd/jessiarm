@@ -34,7 +34,7 @@ cd catkin_ws
 python src/jessiarm/jessiarm_control/src/auto_move.py
 # 4장 Verify USB camera
 # Jetson에서 카메라 동작 확인
-jetson@jp4612GCv346Py37:~$ ls /dev/video*
+jetson@jp4612GCv346Py37:~$ ls /dev/video*를 입력하면
 /dev/video0가 출력된다.
 jetson@jp4612GCv346Py37:~$ nvgstcapture-1.0 --camsrc=0 --cap-dev-node=/dev/video0
 # 5장 blob PicknPlace
